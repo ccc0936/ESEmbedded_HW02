@@ -7,20 +7,8 @@
 .type _start, %function
 _start:
 	nop
+	push {r0,r1,r2}
+	pop {r0,r1,r2}
+	push {r0,r1,r2}
+	push {r2,r0,r1}
 
-	//
-	//branch w/o link
-	//
-	b	label01
-
-label01:
-	nop
-
-	//
-	//branch w/ link
-	//
-	bl	sleep
-
-sleep:
-	nop
-	b	.
