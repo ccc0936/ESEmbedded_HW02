@@ -18,5 +18,6 @@ Pop Multiple Registers loads a subset, or possibly all, of the general-purpose r
 from the stack.
 
 3.設計程式main.s，從_start開始觀察執行push和pop指令後暫存器變化
+main.s
 --------------------
 
