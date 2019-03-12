@@ -20,6 +20,7 @@ from the stack.
 3.設計程式main.s，從_start開始觀察執行push和pop指令後暫存器變化
 
 main.s
+
     .syntax unified
 
     .word 0x20000100
@@ -34,7 +35,10 @@ main.s
 	    push {r0,r1,r2}
 	    push {r2,r0,r1}
 
-
+4.將main.s編譯並以qemu模擬。
+    $make    $make qemu
+    
+並於另一terminal連線。
 
 --------------------
 
